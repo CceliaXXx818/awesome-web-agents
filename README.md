@@ -74,7 +74,6 @@ Steel is an [open-source](https://github.com/steel-dev/steel-browser) browser AP
 
 AI agents that autonomously navigate and interact with the web through a user-friendly interface. (a.k.a Browser Agents)
 
-- [Surf.new](https://surf.new) - An open-source playground for chatting with different web agents. ![GitHub Repo stars](https://img.shields.io/github/stars/steel-dev/surf.new?style=social)
 - [OpenAI Operator](https://openai.com/index/introducing-operator/) - OpenAI's AI agents that can browse the web for you.
 - [Browser-Use](https://www.browser-use.com) - SOTA agent and framework that makes the web LLM-friendly. ![GitHub Repo stars](https://img.shields.io/github/stars/Browser-Use/browser-use?style=social)
 - [Skyvern-AI](https://www.skyvern.com/) - Framework to automate browser-based workflows. ![GitHub Repo stars](https://img.shields.io/github/stars/Skyvern-AI/skyvern?style=social)
@@ -122,7 +121,6 @@ Tools, frameworks and libraries that translate natural language instructions int
 - [Starizon.ai](https://starizon.ai/) - Browser assistant for web task automation.
 - [BrowserGPT](https://browsegpt.ai/) - Browser extension for page summaries and Q&A.
 - [Browse.ai](https://www.browse.ai/) - Chrome extension webscraping that can leverage AI for structured data extraction.
-- [Strawberry Browser](https://www.strawberrybrowser.com/) - A personal assistant that sits in your browser, automates repetitive web actions, learns your workflows.
 - [Deta.surf](https://deta.surf/) - An integrated platform that combines a browser, file manager, and AI assistant with browser-level context.
 - [Comet by Perplexity](https://www.perplexity.ai/comet) - An AI-powered browser by Perplexity. Not much more details out yet.
 - [Dia Browser](https://www.diabrowser.com/) - AI-first web browser envisioned by The Browser Company (Arc).
