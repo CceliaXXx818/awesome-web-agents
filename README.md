@@ -155,6 +155,7 @@ Tools, frameworks and libraries that translate natural language instructions int
 - [HUD](https://github.com/hud-evals/hud-python) - Open-source SDK for building browser and computer-use RL environments to evaluate and train web agents, with task-based verifiable rewards runnable as evals or RL training across any model. ![GitHub Repo stars](https://img.shields.io/github/stars/hud-evals/hud-python?style=social)
 - [Webfuse](https://www.webfuse.com) - Configurable web proxy and browser-as-a-service for deploying and operating AI agents in a sandbox layer on top of any third-party website, using client-side extensions and without source-code access.
 - [Webcmd](https://github.com/agentrhq/webcmd) - Self-learning browser infrastructure for AI agents that records how a site is navigated, then compiles that context into deterministic CLI adapters and reusable sitemap memory for later runs. ![GitHub Repo stars](https://img.shields.io/github/stars/agentrhq/webcmd?style=social)
+- [Hermes Connector](https://github.com/CorsenAI/hermes-connector) - Unofficial open-source Chrome extension and local companion that let Hermes Agent control only explicitly attached tabs in a user's Chrome session. ![GitHub Repo stars](https://img.shields.io/github/stars/CorsenAI/hermes-connector?style=social)
 
 ## AI Web Scrapers/Crawlers
 
