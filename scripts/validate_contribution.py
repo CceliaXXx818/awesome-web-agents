@@ -60,15 +60,34 @@ def changed_files(base_sha: str) -> set[str]:
     return {line.strip() for line in diff.splitlines() if line.strip()}
 
 
+def item_key(item_line: str) -> tuple[str, str] | None:
+    match = ITEM_LINE_RE.match(item_line)
+    if not match:
+        return None
+    return match.group("name").strip(), match.group("url").strip()
+
+
+def new_items_in_diff(diff: str) -> list[str]:
+    new_lines: list[str] = []
+    changed_keys: set[tuple[str, str]] = set()
+    for line in diff.splitlines():
+        if line.startswith(("+++", "---")):
+            continue
+        if re.match(r"^\+- \[", line):
+            new_lines.append(line[1:])
+        elif re.match(r"^-- \[", line):
+            key = item_key(line[1:])
+            if key:
+                changed_keys.add(key)
+    # A rewritten line for an item that was already listed is an edit, not a submission.
+    return [line for line in new_lines if item_key(line) not in changed_keys]
+
+
 def added_item_lines(base_sha: str) -> list[tuple[str, str]]:
     added: list[tuple[str, str]] = []
     for path in ("README.md", "ARCHIVE.md"):
         diff = run_git("diff", "--unified=0", f"{base_sha}...HEAD", "--", path)
-        for line in diff.splitlines():
-            if line.startswith("+++"):
-                continue
-            if re.match(r"^\+- \[", line):
-                added.append((path, line[1:]))
+        added.extend((path, line) for line in new_items_in_diff(diff))
     return added
 
 
